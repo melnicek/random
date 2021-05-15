@@ -10,6 +10,7 @@ function makenum(length) {
 document.getElementById("digit4").innerHTML = makenum(4);
 document.getElementById("digit8").innerHTML = makenum(8);
 document.getElementById("digit16").innerHTML = makenum(16);
+document.getElementById("digit16").innerHTML = makenum(32);
 
 
 function makealphanum(length) {
@@ -24,6 +25,7 @@ function makealphanum(length) {
 document.getElementById("alphanum4").innerHTML = makealphanum(4);
 document.getElementById("alphanum8").innerHTML = makealphanum(8);
 document.getElementById("alphanum16").innerHTML = makealphanum(16);
+document.getElementById("alphanum16").innerHTML = makealphanum(32);
 
 
 document.getElementById("date").innerHTML = Math.floor(Math.random() * 28 + 1) + "."
