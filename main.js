@@ -10,10 +10,6 @@ function makealphanum(length) {
     return result;
 }
 
-document.getElementById("date").innerHTML = Math.floor(Math.random() * 28 + 1) + "."
-    + Math.floor(Math.random() * 12 + 1) + "."
-    + (Math.floor(Math.random() * 50) + 1950);
-
 function getName(){
     let number = Math.floor(Math.random() * (names.length - 1));
     while(names[number] != names[number].toUpperCase()){
@@ -26,7 +22,7 @@ function getName(){
     return names.substring(number, offset);
 }
 
-document.getElementById("username").innerHTML = document.getElementById("name").innerHTML.toLowerCase().replace(" ",".") + makenum(2);
+document.getElementById("username").innerHTML = getName().toLowerCase().replace(" ",".") + makenum(2);
 document.getElementById("password").innerHTML = makealphanum(32);
 
 document.getElementById("refresh").onclick = function tmp() {
