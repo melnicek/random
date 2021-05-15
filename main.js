@@ -22,7 +22,9 @@ function getName(){
     return names.substring(number, offset);
 }
 
-document.getElementById("username").innerHTML = getName().toLowerCase().replace(" ",".") + makenum(2);
+
+const name = getName() + " " + getName();
+document.getElementById("username").innerHTML = name.toLowerCase().replace(" ",".");
 document.getElementById("password").innerHTML = makealphanum(32);
 
 document.getElementById("refresh").onclick = function tmp() {
